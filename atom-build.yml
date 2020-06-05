@@ -1,0 +1,8 @@
+cmd: "sjasm"
+atomCommandName: "Compile and run MSX code"
+name: "Compile and run single MSX ROM"
+args:
+    - "-s"
+    - "{FILE_ACTIVE}"
+errorMatch:
+    - (?<file>[\\D]+)(?<line>\\(\\d+\\))\\s:\\s+(?<message>.+)
